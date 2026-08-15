@@ -10,33 +10,349 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as R8MonthCareerProgramRouteImport } from './routes/8-month-career-program'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AiToolsRouteImport } from './routes/ai-tools'
+import { Route as BuildRouteImport } from './routes/build'
+import { Route as CareerRouteImport } from './routes/career'
+import { Route as CommunityRouteImport } from './routes/community'
+import { Route as ConnectRouteImport } from './routes/connect'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CookiesRouteImport } from './routes/cookies'
+import { Route as CreatorRouteImport } from './routes/creator'
+import { Route as EarnRouteImport } from './routes/earn'
+import { Route as EventsRouteImport } from './routes/events'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as GetStartedRouteImport } from './routes/get-started'
+import { Route as GrowRouteImport } from './routes/grow'
+import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as LearnRouteImport } from './routes/learn'
+import { Route as MembershipsRouteImport } from './routes/memberships'
+import { Route as OpportunitiesRouteImport } from './routes/opportunities'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as RefundsRouteImport } from './routes/refunds'
+import { Route as SignInRouteImport } from './routes/sign-in'
+import { Route as StoriesRouteImport } from './routes/stories'
+import { Route as TermsRouteImport } from './routes/terms'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const R8MonthCareerProgramRoute = R8MonthCareerProgramRouteImport.update({
+  id: '/8-month-career-program',
+  path: '/8-month-career-program',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AiToolsRoute = AiToolsRouteImport.update({
+  id: '/ai-tools',
+  path: '/ai-tools',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuildRoute = BuildRouteImport.update({
+  id: '/build',
+  path: '/build',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CareerRoute = CareerRouteImport.update({
+  id: '/career',
+  path: '/career',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunityRoute = CommunityRouteImport.update({
+  id: '/community',
+  path: '/community',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConnectRoute = ConnectRouteImport.update({
+  id: '/connect',
+  path: '/connect',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CookiesRoute = CookiesRouteImport.update({
+  id: '/cookies',
+  path: '/cookies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CreatorRoute = CreatorRouteImport.update({
+  id: '/creator',
+  path: '/creator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EarnRoute = EarnRouteImport.update({
+  id: '/earn',
+  path: '/earn',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventsRoute = EventsRouteImport.update({
+  id: '/events',
+  path: '/events',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GetStartedRoute = GetStartedRouteImport.update({
+  id: '/get-started',
+  path: '/get-started',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GrowRoute = GrowRouteImport.update({
+  id: '/grow',
+  path: '/grow',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowItWorksRoute = HowItWorksRouteImport.update({
+  id: '/how-it-works',
+  path: '/how-it-works',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LearnRoute = LearnRouteImport.update({
+  id: '/learn',
+  path: '/learn',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MembershipsRoute = MembershipsRouteImport.update({
+  id: '/memberships',
+  path: '/memberships',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OpportunitiesRoute = OpportunitiesRouteImport.update({
+  id: '/opportunities',
+  path: '/opportunities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RefundsRoute = RefundsRouteImport.update({
+  id: '/refunds',
+  path: '/refunds',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SignInRoute = SignInRouteImport.update({
+  id: '/sign-in',
+  path: '/sign-in',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StoriesRoute = StoriesRouteImport.update({
+  id: '/stories',
+  path: '/stories',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/8-month-career-program': typeof R8MonthCareerProgramRoute
+  '/about': typeof AboutRoute
+  '/ai-tools': typeof AiToolsRoute
+  '/build': typeof BuildRoute
+  '/career': typeof CareerRoute
+  '/community': typeof CommunityRoute
+  '/connect': typeof ConnectRoute
+  '/contact': typeof ContactRoute
+  '/cookies': typeof CookiesRoute
+  '/creator': typeof CreatorRoute
+  '/earn': typeof EarnRoute
+  '/events': typeof EventsRoute
+  '/faq': typeof FaqRoute
+  '/get-started': typeof GetStartedRoute
+  '/grow': typeof GrowRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/learn': typeof LearnRoute
+  '/memberships': typeof MembershipsRoute
+  '/opportunities': typeof OpportunitiesRoute
+  '/privacy': typeof PrivacyRoute
+  '/refunds': typeof RefundsRoute
+  '/sign-in': typeof SignInRoute
+  '/stories': typeof StoriesRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/8-month-career-program': typeof R8MonthCareerProgramRoute
+  '/about': typeof AboutRoute
+  '/ai-tools': typeof AiToolsRoute
+  '/build': typeof BuildRoute
+  '/career': typeof CareerRoute
+  '/community': typeof CommunityRoute
+  '/connect': typeof ConnectRoute
+  '/contact': typeof ContactRoute
+  '/cookies': typeof CookiesRoute
+  '/creator': typeof CreatorRoute
+  '/earn': typeof EarnRoute
+  '/events': typeof EventsRoute
+  '/faq': typeof FaqRoute
+  '/get-started': typeof GetStartedRoute
+  '/grow': typeof GrowRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/learn': typeof LearnRoute
+  '/memberships': typeof MembershipsRoute
+  '/opportunities': typeof OpportunitiesRoute
+  '/privacy': typeof PrivacyRoute
+  '/refunds': typeof RefundsRoute
+  '/sign-in': typeof SignInRoute
+  '/stories': typeof StoriesRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/8-month-career-program': typeof R8MonthCareerProgramRoute
+  '/about': typeof AboutRoute
+  '/ai-tools': typeof AiToolsRoute
+  '/build': typeof BuildRoute
+  '/career': typeof CareerRoute
+  '/community': typeof CommunityRoute
+  '/connect': typeof ConnectRoute
+  '/contact': typeof ContactRoute
+  '/cookies': typeof CookiesRoute
+  '/creator': typeof CreatorRoute
+  '/earn': typeof EarnRoute
+  '/events': typeof EventsRoute
+  '/faq': typeof FaqRoute
+  '/get-started': typeof GetStartedRoute
+  '/grow': typeof GrowRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/learn': typeof LearnRoute
+  '/memberships': typeof MembershipsRoute
+  '/opportunities': typeof OpportunitiesRoute
+  '/privacy': typeof PrivacyRoute
+  '/refunds': typeof RefundsRoute
+  '/sign-in': typeof SignInRoute
+  '/stories': typeof StoriesRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/8-month-career-program'
+    | '/about'
+    | '/ai-tools'
+    | '/build'
+    | '/career'
+    | '/community'
+    | '/connect'
+    | '/contact'
+    | '/cookies'
+    | '/creator'
+    | '/earn'
+    | '/events'
+    | '/faq'
+    | '/get-started'
+    | '/grow'
+    | '/how-it-works'
+    | '/learn'
+    | '/memberships'
+    | '/opportunities'
+    | '/privacy'
+    | '/refunds'
+    | '/sign-in'
+    | '/stories'
+    | '/terms'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/8-month-career-program'
+    | '/about'
+    | '/ai-tools'
+    | '/build'
+    | '/career'
+    | '/community'
+    | '/connect'
+    | '/contact'
+    | '/cookies'
+    | '/creator'
+    | '/earn'
+    | '/events'
+    | '/faq'
+    | '/get-started'
+    | '/grow'
+    | '/how-it-works'
+    | '/learn'
+    | '/memberships'
+    | '/opportunities'
+    | '/privacy'
+    | '/refunds'
+    | '/sign-in'
+    | '/stories'
+    | '/terms'
+  id:
+    | '__root__'
+    | '/'
+    | '/8-month-career-program'
+    | '/about'
+    | '/ai-tools'
+    | '/build'
+    | '/career'
+    | '/community'
+    | '/connect'
+    | '/contact'
+    | '/cookies'
+    | '/creator'
+    | '/earn'
+    | '/events'
+    | '/faq'
+    | '/get-started'
+    | '/grow'
+    | '/how-it-works'
+    | '/learn'
+    | '/memberships'
+    | '/opportunities'
+    | '/privacy'
+    | '/refunds'
+    | '/sign-in'
+    | '/stories'
+    | '/terms'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  R8MonthCareerProgramRoute: typeof R8MonthCareerProgramRoute
+  AboutRoute: typeof AboutRoute
+  AiToolsRoute: typeof AiToolsRoute
+  BuildRoute: typeof BuildRoute
+  CareerRoute: typeof CareerRoute
+  CommunityRoute: typeof CommunityRoute
+  ConnectRoute: typeof ConnectRoute
+  ContactRoute: typeof ContactRoute
+  CookiesRoute: typeof CookiesRoute
+  CreatorRoute: typeof CreatorRoute
+  EarnRoute: typeof EarnRoute
+  EventsRoute: typeof EventsRoute
+  FaqRoute: typeof FaqRoute
+  GetStartedRoute: typeof GetStartedRoute
+  GrowRoute: typeof GrowRoute
+  HowItWorksRoute: typeof HowItWorksRoute
+  LearnRoute: typeof LearnRoute
+  MembershipsRoute: typeof MembershipsRoute
+  OpportunitiesRoute: typeof OpportunitiesRoute
+  PrivacyRoute: typeof PrivacyRoute
+  RefundsRoute: typeof RefundsRoute
+  SignInRoute: typeof SignInRoute
+  StoriesRoute: typeof StoriesRoute
+  TermsRoute: typeof TermsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +364,203 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/8-month-career-program': {
+      id: '/8-month-career-program'
+      path: '/8-month-career-program'
+      fullPath: '/8-month-career-program'
+      preLoaderRoute: typeof R8MonthCareerProgramRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ai-tools': {
+      id: '/ai-tools'
+      path: '/ai-tools'
+      fullPath: '/ai-tools'
+      preLoaderRoute: typeof AiToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/build': {
+      id: '/build'
+      path: '/build'
+      fullPath: '/build'
+      preLoaderRoute: typeof BuildRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/career': {
+      id: '/career'
+      path: '/career'
+      fullPath: '/career'
+      preLoaderRoute: typeof CareerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community': {
+      id: '/community'
+      path: '/community'
+      fullPath: '/community'
+      preLoaderRoute: typeof CommunityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/connect': {
+      id: '/connect'
+      path: '/connect'
+      fullPath: '/connect'
+      preLoaderRoute: typeof ConnectRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cookies': {
+      id: '/cookies'
+      path: '/cookies'
+      fullPath: '/cookies'
+      preLoaderRoute: typeof CookiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/creator': {
+      id: '/creator'
+      path: '/creator'
+      fullPath: '/creator'
+      preLoaderRoute: typeof CreatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/earn': {
+      id: '/earn'
+      path: '/earn'
+      fullPath: '/earn'
+      preLoaderRoute: typeof EarnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/events': {
+      id: '/events'
+      path: '/events'
+      fullPath: '/events'
+      preLoaderRoute: typeof EventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/get-started': {
+      id: '/get-started'
+      path: '/get-started'
+      fullPath: '/get-started'
+      preLoaderRoute: typeof GetStartedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/grow': {
+      id: '/grow'
+      path: '/grow'
+      fullPath: '/grow'
+      preLoaderRoute: typeof GrowRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-it-works': {
+      id: '/how-it-works'
+      path: '/how-it-works'
+      fullPath: '/how-it-works'
+      preLoaderRoute: typeof HowItWorksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learn': {
+      id: '/learn'
+      path: '/learn'
+      fullPath: '/learn'
+      preLoaderRoute: typeof LearnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/memberships': {
+      id: '/memberships'
+      path: '/memberships'
+      fullPath: '/memberships'
+      preLoaderRoute: typeof MembershipsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/opportunities': {
+      id: '/opportunities'
+      path: '/opportunities'
+      fullPath: '/opportunities'
+      preLoaderRoute: typeof OpportunitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refunds': {
+      id: '/refunds'
+      path: '/refunds'
+      fullPath: '/refunds'
+      preLoaderRoute: typeof RefundsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sign-in': {
+      id: '/sign-in'
+      path: '/sign-in'
+      fullPath: '/sign-in'
+      preLoaderRoute: typeof SignInRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stories': {
+      id: '/stories'
+      path: '/stories'
+      fullPath: '/stories'
+      preLoaderRoute: typeof StoriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  R8MonthCareerProgramRoute: R8MonthCareerProgramRoute,
+  AboutRoute: AboutRoute,
+  AiToolsRoute: AiToolsRoute,
+  BuildRoute: BuildRoute,
+  CareerRoute: CareerRoute,
+  CommunityRoute: CommunityRoute,
+  ConnectRoute: ConnectRoute,
+  ContactRoute: ContactRoute,
+  CookiesRoute: CookiesRoute,
+  CreatorRoute: CreatorRoute,
+  EarnRoute: EarnRoute,
+  EventsRoute: EventsRoute,
+  FaqRoute: FaqRoute,
+  GetStartedRoute: GetStartedRoute,
+  GrowRoute: GrowRoute,
+  HowItWorksRoute: HowItWorksRoute,
+  LearnRoute: LearnRoute,
+  MembershipsRoute: MembershipsRoute,
+  OpportunitiesRoute: OpportunitiesRoute,
+  PrivacyRoute: PrivacyRoute,
+  RefundsRoute: RefundsRoute,
+  SignInRoute: SignInRoute,
+  StoriesRoute: StoriesRoute,
+  TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
