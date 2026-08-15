@@ -1,0 +1,9 @@
+import { createFileRoute } from "@tanstack/react-router";
+
+export const Route = createFileRoute("/how-it-works")({
+  component: PageHowItWorks,
+});
+
+function PageHowItWorks() {
+  return null;
+}
