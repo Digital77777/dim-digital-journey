@@ -3,6 +3,7 @@ export const BRAND = {
   short: "DIM",
   tagline: "Elevate Your Digital IQ.",
   philosophy: "Learn. Build. Connect. Earn. Grow.",
+  email: "hello@digitalintelligencemarketplace.com",
 };
 
 export type NavItem = { label: string; to: string };
