@@ -23,7 +23,7 @@ export const Route = createFileRoute("/memberships")({
     ],
     links: [{ rel: "canonical", href: "/memberships" }],
   }),
-  component: PageMemberships;
+  component: PageMemberships,
 });
 
 function PageMemberships() {
