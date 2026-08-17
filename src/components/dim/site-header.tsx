@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useNavigate } from "@tanstack/react-router";
+import { useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -9,6 +10,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { NAV_ITEMS } from "@/content/site";
+import { useSessionUser } from "@/hooks/use-session";
+import { supabase } from "@/integrations/supabase/client";
 import { DimWordmark } from "./logo";
 import { Container } from "./primitives";
 
@@ -16,6 +19,18 @@ const ACTIVE = { className: "text-primary" };
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const { user } = useSessionUser();
+  const navigate = useNavigate();
+  const queryClient = useQueryClient();
+
+  async function handleSignOut() {
+    setOpen(false);
+    await queryClient.cancelQueries();
+    queryClient.clear();
+    await supabase.auth.signOut();
+    navigate({ to: "/", replace: true });
+  }
+
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
