@@ -57,18 +57,34 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
-          <Button asChild variant="ghost" size="sm">
-            <Link to="/sign-in">Sign In</Link>
-          </Button>
-          <Button asChild size="sm" className="bg-gradient-dim">
-            <Link to="/get-started">Get Started</Link>
-          </Button>
+          {user ? (
+            <>
+              <Button asChild variant="ghost" size="sm">
+                <Link to="/dashboard">Dashboard</Link>
+              </Button>
+              <Button variant="outline" size="sm" onClick={handleSignOut}>
+                Sign Out
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button asChild variant="ghost" size="sm">
+                <Link to="/sign-in">Sign In</Link>
+              </Button>
+              <Button asChild size="sm" className="bg-gradient-dim">
+                <Link to="/get-started">Get Started</Link>
+              </Button>
+            </>
+          )}
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
           <Button asChild size="sm" className="bg-gradient-dim">
-            <Link to="/get-started">Get Started</Link>
+            <Link to={user ? "/dashboard" : "/get-started"}>
+              {user ? "Dashboard" : "Get Started"}
+            </Link>
           </Button>
+
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" aria-label="Open menu">
