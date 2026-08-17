@@ -1,11 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { Button } from "@/components/ui/button";
-import { ComingSoonBadge } from "@/components/dim/coming-soon";
+import { createFileRoute } from "@tanstack/react-router";
+import { AuthForm } from "@/components/dim/auth-form";
 import { Container, Section } from "@/components/dim/primitives";
 
 const TITLE = "Sign In to DIM";
 const DESCRIPTION =
-  "Sign in to your Digital Intelligence Marketplace account. The member platform is being finalised and sign-in opens soon.";
+  "Sign in to your Digital Intelligence Marketplace account to reach your dashboard, learning, tools and community.";
 
 export const Route = createFileRoute("/sign-in")({
   head: () => ({
@@ -26,25 +25,15 @@ export const Route = createFileRoute("/sign-in")({
 function PageSignIn() {
   return (
     <Section>
-      <Container className="max-w-xl">
-        <div className="rounded-2xl border border-border bg-card p-8 shadow-soft">
-          <ComingSoonBadge label="Sign-in opening soon" />
-          <h1 className="mt-4 font-display text-2xl font-bold tracking-tight">
-            Member sign-in
-          </h1>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            The DIM member platform is being finalised. When accounts open,
-            you'll sign in here to reach your dashboard, learning, tools and
-            community.
-          </p>
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <Button asChild className="bg-gradient-dim">
-              <Link to="/get-started">Get Started</Link>
-            </Button>
-            <Button asChild variant="outline">
-              <Link to="/how-it-works">Explore DIM</Link>
-            </Button>
-          </div>
+      <Container className="max-w-lg">
+        <h1 className="font-display text-3xl font-bold tracking-tight">
+          Member sign-in
+        </h1>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Use your email and password, or continue with Google.
+        </p>
+        <div className="mt-8">
+          <AuthForm mode="sign-in" />
         </div>
       </Container>
     </Section>
