@@ -144,17 +144,33 @@ export function SiteHeader() {
                 </Link>
               </nav>
               <div className="mt-6 flex flex-col gap-2 px-4">
-                <Button asChild className="bg-gradient-dim">
-                  <Link to="/get-started" onClick={() => setOpen(false)}>
-                    Create Your Free Account
-                  </Link>
-                </Button>
-                <Button asChild variant="outline">
-                  <Link to="/sign-in" onClick={() => setOpen(false)}>
-                    Sign In
-                  </Link>
-                </Button>
+                {user ? (
+                  <>
+                    <Button asChild className="bg-gradient-dim">
+                      <Link to="/dashboard" onClick={() => setOpen(false)}>
+                        Go to Dashboard
+                      </Link>
+                    </Button>
+                    <Button variant="outline" onClick={handleSignOut}>
+                      Sign Out
+                    </Button>
+                  </>
+                ) : (
+                  <>
+                    <Button asChild className="bg-gradient-dim">
+                      <Link to="/get-started" onClick={() => setOpen(false)}>
+                        Create Your Free Account
+                      </Link>
+                    </Button>
+                    <Button asChild variant="outline">
+                      <Link to="/sign-in" onClick={() => setOpen(false)}>
+                        Sign In
+                      </Link>
+                    </Button>
+                  </>
+                )}
               </div>
+
             </SheetContent>
           </Sheet>
         </div>
