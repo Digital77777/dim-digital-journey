@@ -12,10 +12,10 @@ export const Route = createFileRoute("/refunds")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/refunds" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/refunds" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/refunds" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/refunds" }],
   }),
   component: PageRefunds,
 });

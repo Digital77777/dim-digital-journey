@@ -14,10 +14,10 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/contact" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/contact" }],
   }),
   component: PageContact,
 });

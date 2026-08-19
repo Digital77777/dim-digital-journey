@@ -12,10 +12,10 @@ export const Route = createFileRoute("/cookies")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/cookies" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/cookies" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/cookies" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/cookies" }],
   }),
   component: PageCookies,
 });

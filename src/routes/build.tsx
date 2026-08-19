@@ -13,10 +13,10 @@ export const Route = createFileRoute("/build")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/build" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/build" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/build" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/build" }],
   }),
   component: PageBuild,
 });
