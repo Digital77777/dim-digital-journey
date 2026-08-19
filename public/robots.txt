@@ -12,5 +12,8 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /dashboard
+Disallow: /reset-password
+Disallow: /sign-in
 
 Sitemap: https://dim-digital-journey.lovable.app/sitemap.xml
