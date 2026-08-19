@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { AuthForm } from "@/components/dim/auth-form";
 import { Container, Section } from "@/components/dim/primitives";
@@ -18,6 +19,7 @@ export const Route = createFileRoute("/sign-in")({
       { name: "robots", content: "noindex" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/sign-in" }],
+    scripts: [breadcrumbLd("/sign-in", "Sign In to DIM")],
   }),
   component: PageSignIn,
 });

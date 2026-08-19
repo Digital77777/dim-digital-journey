@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { CtaBand } from "@/components/dim/cta-band";
 import { FaqAccordion } from "@/components/dim/faq-accordion";
@@ -20,6 +21,7 @@ export const Route = createFileRoute("/faq")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/faq" }],
+    scripts: [breadcrumbLd("/faq", "Frequently Asked Questions")],
     scripts: [
       {
         type: "application/ld+json",

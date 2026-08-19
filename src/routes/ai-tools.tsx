@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { ComingSoonBadge } from "@/components/dim/coming-soon";
 import { CtaBand } from "@/components/dim/cta-band";
@@ -20,6 +21,7 @@ export const Route = createFileRoute("/ai-tools")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/ai-tools" }],
+    scripts: [breadcrumbLd("/ai-tools", "AI Tools Directory")],
   }),
   component: PageAiTools,
 });

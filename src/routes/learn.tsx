@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { PillarPage } from "@/components/dim/pillar-page";
 import { PILLARS } from "@/content/site";
@@ -17,6 +18,7 @@ export const Route = createFileRoute("/learn")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/learn" }],
+    scripts: [breadcrumbLd("/learn", "Learn Practical AI Skills")],
   }),
   component: PageLearn,
 });

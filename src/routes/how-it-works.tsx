@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { CtaBand } from "@/components/dim/cta-band";
 import { HowItWorksSteps } from "@/components/dim/home-sections";
@@ -25,6 +26,7 @@ export const Route = createFileRoute("/how-it-works")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/how-it-works" }],
+    scripts: [breadcrumbLd("/how-it-works", "How DIM Works")],
   }),
   component: PageHowItWorks,
 });

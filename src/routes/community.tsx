@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { ComingSoonCard } from "@/components/dim/coming-soon";
 import { CtaBand } from "@/components/dim/cta-band";
@@ -19,6 +20,7 @@ export const Route = createFileRoute("/community")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/community" }],
+    scripts: [breadcrumbLd("/community", "DIM Community")],
   }),
   component: PageCommunity,
 });

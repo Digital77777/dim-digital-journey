@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { AuthForm } from "@/components/dim/auth-form";
 import { PageHero } from "@/components/dim/page-hero";
@@ -24,6 +25,7 @@ export const Route = createFileRoute("/get-started")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/get-started" }],
+    scripts: [breadcrumbLd("/get-started", "Get Started With DIM")],
   }),
   component: PageGetStarted,
 });
