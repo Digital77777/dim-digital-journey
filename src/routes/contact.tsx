@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/dim/page-hero";
 import { Section, SectionHeading } from "@/components/dim/primitives";
@@ -18,6 +19,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/contact" }],
+    scripts: [breadcrumbLd("/contact", "Contact DIM")],
   }),
   component: PageContact,
 });

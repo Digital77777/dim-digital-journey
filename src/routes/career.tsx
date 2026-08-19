@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { ComingSoonBadge } from "@/components/dim/coming-soon";
@@ -27,6 +28,7 @@ export const Route = createFileRoute("/career")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/career" }],
+    scripts: [breadcrumbLd("/career", "Career on DIM")],
   }),
   component: PageCareer,
 });

@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { CtaBand } from "@/components/dim/cta-band";
@@ -25,6 +26,7 @@ export const Route = createFileRoute("/8-month-career-program")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/8-month-career-program" }],
+    scripts: [breadcrumbLd("/8-month-career-program", "8-Month Career Program")],
   }),
   component: PageProgram,
 });

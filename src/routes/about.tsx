@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { CtaBand } from "@/components/dim/cta-band";
 import { PageHero } from "@/components/dim/page-hero";
@@ -19,6 +20,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/about" }],
+    scripts: [breadcrumbLd("/about", "About DIM")],
   }),
   component: PageAbout,
 });

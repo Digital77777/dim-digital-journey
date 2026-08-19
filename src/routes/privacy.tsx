@@ -1,3 +1,4 @@
+import { breadcrumbLd } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { LegalPage } from "@/components/dim/legal-page";
 
@@ -16,6 +17,7 @@ export const Route = createFileRoute("/privacy")({
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/privacy" }],
+    scripts: [breadcrumbLd("/privacy", "Privacy Policy")],
   }),
   component: PagePrivacy,
 });
