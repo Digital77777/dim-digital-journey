@@ -15,10 +15,10 @@ export const Route = createFileRoute("/opportunities")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/opportunities" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/opportunities" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/opportunities" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/opportunities" }],
   }),
   component: PageOpportunities,
 });

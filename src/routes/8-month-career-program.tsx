@@ -21,10 +21,10 @@ export const Route = createFileRoute("/8-month-career-program")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/8-month-career-program" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/8-month-career-program" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/8-month-career-program" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/8-month-career-program" }],
   }),
   component: PageProgram,
 });

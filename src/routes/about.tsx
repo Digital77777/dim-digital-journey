@@ -15,10 +15,10 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/about" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/about" }],
   }),
   component: PageAbout,
 });

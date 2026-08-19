@@ -21,10 +21,10 @@ export const Route = createFileRoute("/how-it-works")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/how-it-works" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/how-it-works" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/how-it-works" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/how-it-works" }],
   }),
   component: PageHowItWorks,
 });

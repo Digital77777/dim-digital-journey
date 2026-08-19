@@ -18,10 +18,10 @@ export const Route = createFileRoute("/memberships")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/memberships" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/memberships" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/memberships" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/memberships" }],
   }),
   component: PageMemberships,
 });

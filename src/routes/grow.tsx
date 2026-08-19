@@ -13,10 +13,10 @@ export const Route = createFileRoute("/grow")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/grow" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/grow" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/grow" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/grow" }],
   }),
   component: PageGrow,
 });

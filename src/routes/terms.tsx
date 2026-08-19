@@ -12,10 +12,10 @@ export const Route = createFileRoute("/terms")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/terms" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/terms" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/terms" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/terms" }],
   }),
   component: PageTerms,
 });

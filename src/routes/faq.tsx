@@ -16,10 +16,10 @@ export const Route = createFileRoute("/faq")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/faq" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/faq" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/faq" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/faq" }],
     scripts: [
       {
         type: "application/ld+json",

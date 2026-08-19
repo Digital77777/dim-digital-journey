@@ -13,10 +13,10 @@ export const Route = createFileRoute("/connect")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/connect" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/connect" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/connect" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/connect" }],
   }),
   component: PageConnect,
 });

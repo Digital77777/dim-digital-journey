@@ -15,10 +15,10 @@ export const Route = createFileRoute("/community")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/community" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/community" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "/community" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/community" }],
   }),
   component: PageCommunity,
 });

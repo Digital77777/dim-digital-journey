@@ -13,11 +13,11 @@ export const Route = createFileRoute("/sign-in")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "/sign-in" },
+      { property: "og:url", content: "https://dim-digital-journey.lovable.app/sign-in" },
       { property: "og:type", content: "website" },
       { name: "robots", content: "noindex" },
     ],
-    links: [{ rel: "canonical", href: "/sign-in" }],
+    links: [{ rel: "canonical", href: "https://dim-digital-journey.lovable.app/sign-in" }],
   }),
   component: PageSignIn,
 });
